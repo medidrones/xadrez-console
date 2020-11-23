@@ -38,10 +38,12 @@ namespace xadrez_console
                     }
                     catch (TabuleiroException e)
                     {
-                        Console.Write(e.Message);
+                        Console.WriteLine(e.Message);                        
                         Console.ReadLine();
                     }
                 }
+                Console.Clear();
+                Tela.imprimirPartida(partida);
             }
             catch (TabuleiroException e)
             {
